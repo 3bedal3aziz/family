@@ -1,0 +1,19 @@
+.rtl {
+    direction: rtl;
+    /* Other RTL-specific styles if needed */
+  }
+  .mainnav{
+    background-color: #E9E9FF;
+    height: auto;
+    padding: 0;
+  }
+  .navbar-nav .nav-link {
+    font-weight: bold;
+    transition: color 0.3s; /* Adding a smooth transition for color change */
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-image: linear-gradient(0deg, #002c66, #8486f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

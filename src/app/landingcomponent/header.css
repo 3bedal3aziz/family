@@ -1,0 +1,55 @@
+.maintext{
+    margin: 20% 15% 0 0;
+}
+.hasabtext{
+  color: #8486f9;
+  line-break: 10px;
+  padding: 5px;
+  line-height: 70px;
+}
+
+.maintext2{
+    margin: 20% 15% 0 0;
+    line-height: 35px;
+}
+@keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Apply animation to elements with the 'animate' class */
+  .animate {
+    opacity: 0; /* Initially hide the text */
+    animation: slide-up 1.5s forwards; /* Animation duration: 1.5s */
+  }
+
+  .maintext,
+.maintext2 {
+  opacity: 0; /* Initially hide the text */
+}
+
+/* Animation for text */
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation when screen width is 768px or higher */
+@media screen and (min-width: 768px) {
+  .maintext,
+  .maintext2 {
+    animation: slide-up 1.5s forwards;
+  }
+}
